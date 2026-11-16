@@ -1,0 +1,20 @@
+title: Diagnosis
+description: >
+  Diagnosis explains why an execution trace violates a temporal requirement.
+  It checks variants of the violated requirement against the trace and learns
+  a decision tree from the verdicts.
+url: "https://diagnosis-sbtd.github.io"
+baseurl: ""
+repository_url: "https://github.com/rdinizcal/Diagnosis"
+replication_url: "https://github.com/rdinizcal/Diagnosis-replication-package"
+cronitor_client_key: "730320ff6cd111be3eea61a4f8f4307f"
+
+markdown: kramdown
+theme: null
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - tools/
+  - vendor/

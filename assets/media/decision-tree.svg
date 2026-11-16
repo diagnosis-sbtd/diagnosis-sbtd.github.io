@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="696" height="486" viewBox="0 0 696 486" role="img" aria-labelledby="title desc">
+  <title id="title">Diagnosis decision tree</title>
+  <desc id="desc">Decision tree learned for requirement phi3 on the retry trace of the lane-change example. Internal nodes are mutated elements of phi3; leaves give the verdict and the number of training samples.</desc>
+  <g transform="translate(1.000 1.000)">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(25.92 445)">
+<title>DiagnosisTree</title>
+<!-- root&#45;&gt;conn -->
+<g id="edge2" class="edge">
+<title>root&#45;&gt;conn</title>
+<path fill="none" stroke="#8a928e" stroke-width="1.3" d="M216.9,-382.93C230.92,-366.07 252.44,-340.21 266.6,-323.18"/>
+<text xml:space="preserve" text-anchor="middle" x="286" y="-347.01" font-family="Helvetica, Arial, sans-serif" font-size="14.00" fill="#5b6561"> &#160;&gt; 4.6998 s &#160;</text>
+</g>
+<!-- root&#45;&gt;t1396 -->
+<g id="edge1" class="edge">
+<title>root&#45;&gt;t1396</title>
+<path fill="none" stroke="#8a928e" stroke-width="1.3" d="M189.01,-382.93C175.08,-366.18 153.74,-340.53 139.57,-323.5"/>
+<text xml:space="preserve" text-anchor="middle" x="168.7" y="-347.01" font-family="Helvetica, Arial, sans-serif" font-size="14.00" fill="#5b6561"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;≤ 4.6998 s</text>
+</g>
+<!-- conn&#45;&gt;inf_and -->
+<g id="edge3" class="edge">
+<title>conn&#45;&gt;inf_and</title>
+<path fill="none" stroke="#8a928e" stroke-width="1.3" d="M266.28,-286.73C251.76,-269.7 229.66,-243.8 215.27,-226.93"/>
+<text xml:space="preserve" text-anchor="middle" x="264.49" y="-251.24" font-family="Helvetica, Arial, sans-serif" font-size="14.00" fill="#5b6561"> &#160;and &#160;</text>
+</g>
+<!-- conn&#45;&gt;zero -->
+<g id="edge4" class="edge">
+<title>conn&#45;&gt;zero</title>
+<path fill="none" stroke="#8a928e" stroke-width="1.3" d="M293.98,-286.73C306.79,-269.81 326.23,-244.13 339.02,-227.24"/>
+<text xml:space="preserve" text-anchor="middle" x="334.21" y="-251.24" font-family="Helvetica, Arial, sans-serif" font-size="14.00" fill="#5b6561"> &#160;or &#160;</text>
+</g>
+<!-- inf_and&#45;&gt;ypos -->
+<g id="edge6" class="edge">
+<title>inf_and&#45;&gt;ypos</title>
+<path fill="none" stroke="#8a928e" stroke-width="1.3" d="M199.99,-190.07C199.11,-173.47 197.8,-149 196.92,-132.41"/>
+<text xml:space="preserve" text-anchor="middle" x="238.13" y="-155.47" font-family="Helvetica, Arial, sans-serif" font-size="14.00" fill="#5b6561"> &#160;&gt; 5.2003 s &#160;</text>
+</g>
+<!-- inf_and&#45;&gt;t160 -->
+<g id="edge5" class="edge">
+<title>inf_and&#45;&gt;t160</title>
+<path fill="none" stroke="#8a928e" stroke-width="1.3" d="M176.58,-193.5C148.9,-176.87 103.76,-149.73 74.21,-131.97"/>
+<text xml:space="preserve" text-anchor="middle" x="135.7" y="-155.47" font-family="Helvetica, Arial, sans-serif" font-size="14.00" fill="#5b6561"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;≤ 5.2003 s</text>
+</g>
+<!-- ypos&#45;&gt;t64 -->
+<g id="edge7" class="edge">
+<title>ypos&#45;&gt;t64</title>
+<path fill="none" stroke="#8a928e" stroke-width="1.3" d="M182.02,-95.26C168.47,-78.62 148.01,-53.47 134.32,-36.65"/>
+<text xml:space="preserve" text-anchor="middle" x="166.08" y="-59.7" font-family="Helvetica, Arial, sans-serif" font-size="14.00" fill="#5b6561"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;≤ 2.8006 m</text>
+</g>
+<!-- ypos&#45;&gt;f168 -->
+<g id="edge8" class="edge">
+<title>ypos&#45;&gt;f168</title>
+<path fill="none" stroke="#8a928e" stroke-width="1.3" d="M211.55,-95.26C226.69,-78.62 249.58,-53.47 264.89,-36.65"/>
+<text xml:space="preserve" text-anchor="middle" x="285.54" y="-59.7" font-family="Helvetica, Arial, sans-serif" font-size="14.00" fill="#5b6561"> &#160;&gt; 2.8006 m &#160;</text>
+</g>
+<!-- zero&#45;&gt;inf_or -->
+<g id="edge10" class="edge">
+<title>zero&#45;&gt;inf_or</title>
+<path fill="none" stroke="#8a928e" stroke-width="1.3" d="M376.33,-193.5C405.55,-175.94 454.23,-146.68 483.49,-129.09"/>
+<text xml:space="preserve" text-anchor="middle" x="507.81" y="-155.47" font-family="Helvetica, Arial, sans-serif" font-size="14.00" fill="#5b6561"> &#160;&gt; 4.9250 s &#160;</text>
+</g>
+<!-- zero&#45;&gt;f881 -->
+<g id="edge9" class="edge">
+<title>zero&#45;&gt;f881</title>
+<path fill="none" stroke="#8a928e" stroke-width="1.3" d="M351.95,-190.07C351.95,-173.26 351.95,-148.37 351.95,-131.77"/>
+<text xml:space="preserve" text-anchor="middle" x="395.7" y="-155.47" font-family="Helvetica, Arial, sans-serif" font-size="14.00" fill="#5b6561"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;≤ 4.9250 s</text>
+</g>
+<!-- inf_or&#45;&gt;t7 -->
+<g id="edge11" class="edge">
+<title>inf_or&#45;&gt;t7</title>
+<path fill="none" stroke="#8a928e" stroke-width="1.3" d="M493.65,-95.69C479.36,-79.01 457.48,-53.46 442.95,-36.5"/>
+<text xml:space="preserve" text-anchor="middle" x="478.7" y="-59.7" font-family="Helvetica, Arial, sans-serif" font-size="14.00" fill="#5b6561"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;≤ 5.0639 s</text>
+</g>
+<!-- inf_or&#45;&gt;f18 -->
+<g id="edge12" class="edge">
+<title>inf_or&#45;&gt;f18</title>
+<path fill="none" stroke="#8a928e" stroke-width="1.3" d="M521.54,-95.69C535.12,-79.01 555.91,-53.46 569.71,-36.5"/>
+<text xml:space="preserve" text-anchor="middle" x="589.88" y="-59.7" font-family="Helvetica, Arial, sans-serif" font-size="14.00" fill="#5b6561"> &#160;&gt; 5.0639 s &#160;</text>
+</g>
+<!-- root -->
+<g id="node1" class="node">
+<title>root</title>
+<ellipse fill="#ffffff" stroke="#1d2321" stroke-width="1.4" cx="202.95" cy="-400.69" rx="43.66" ry="18.38"/>
+<text xml:space="preserve" text-anchor="middle" x="202.95" y="-393.54" font-family="Helvetica, Arial, sans-serif" font-size="17.00" fill="#1d2321">φ3(∞)</text>
+</g>
+<!-- conn -->
+<g id="node2" class="node">
+<title>conn</title>
+<ellipse fill="#ffffff" stroke="#1d2321" stroke-width="1.4" cx="280.95" cy="-304.92" rx="55.86" ry="18.38"/>
+<text xml:space="preserve" text-anchor="middle" x="280.95" y="-297.77" font-family="Helvetica, Arial, sans-serif" font-size="17.00" fill="#1d2321">φ3(and)</text>
+</g>
+<!-- inf_and -->
+<g id="node3" class="node">
+<title>inf_and</title>
+<ellipse fill="#ffffff" stroke="#1d2321" stroke-width="1.4" cx="200.95" cy="-209.15" rx="43.66" ry="18.38"/>
+<text xml:space="preserve" text-anchor="middle" x="200.95" y="-202" font-family="Helvetica, Arial, sans-serif" font-size="17.00" fill="#1d2321">φ3(∞)</text>
+</g>
+<!-- ypos -->
+<g id="node4" class="node">
+<title>ypos</title>
+<ellipse fill="#ffffff" stroke="#1d2321" stroke-width="1.4" cx="195.95" cy="-113.38" rx="52.15" ry="18.38"/>
+<text xml:space="preserve" text-anchor="middle" x="195.95" y="-106.23" font-family="Helvetica, Arial, sans-serif" font-size="17.00" fill="#1d2321">φ3(3.5)</text>
+</g>
+<!-- zero -->
+<g id="node5" class="node">
+<title>zero</title>
+<ellipse fill="#ffffff" stroke="#1d2321" stroke-width="1.4" cx="351.95" cy="-209.15" rx="42.07" ry="18.38"/>
+<text xml:space="preserve" text-anchor="middle" x="351.95" y="-202" font-family="Helvetica, Arial, sans-serif" font-size="17.00" fill="#1d2321">φ3(0)</text>
+</g>
+<!-- inf_or -->
+<g id="node6" class="node">
+<title>inf_or</title>
+<ellipse fill="#ffffff" stroke="#1d2321" stroke-width="1.4" cx="507.96" cy="-113.38" rx="43.66" ry="18.38"/>
+<text xml:space="preserve" text-anchor="middle" x="507.95" y="-106.23" font-family="Helvetica, Arial, sans-serif" font-size="17.00" fill="#1d2321">φ3(∞)</text>
+</g>
+<!-- t1396 -->
+<g id="node7" class="node">
+<title>t1396</title>
+<polygon fill="#ffffff" stroke="#1f4e79" stroke-width="1.4" points="174.03,-322.92 75.87,-322.92 75.87,-286.92 174.03,-286.92 174.03,-322.92"/>
+<text xml:space="preserve" text-anchor="middle" x="124.95" y="-298.55" font-family="Helvetica, Arial, sans-serif" font-size="15.00" fill="#1f4e79">True (1396)</text>
+</g>
+<!-- t160 -->
+<g id="node8" class="node">
+<title>t160</title>
+<polygon fill="#ffffff" stroke="#1f4e79" stroke-width="1.4" points="89.91,-131.38 0,-131.38 0,-95.38 89.91,-95.38 89.91,-131.38"/>
+<text xml:space="preserve" text-anchor="middle" x="44.95" y="-107.01" font-family="Helvetica, Arial, sans-serif" font-size="15.00" fill="#1f4e79">True (160)</text>
+</g>
+<!-- t64 -->
+<g id="node9" class="node">
+<title>t64</title>
+<polygon fill="#ffffff" stroke="#1f4e79" stroke-width="1.4" points="160.78,-36 79.12,-36 79.12,0 160.78,0 160.78,-36"/>
+<text xml:space="preserve" text-anchor="middle" x="119.95" y="-11.62" font-family="Helvetica, Arial, sans-serif" font-size="15.00" fill="#1f4e79">True (64)</text>
+</g>
+<!-- f168 -->
+<g id="node10" class="node">
+<title>f168</title>
+<polygon fill="#ffffff" stroke="#a8442f" stroke-width="1.4" points="328.91,-36 233,-36 233,0 328.91,0 328.91,-36"/>
+<text xml:space="preserve" text-anchor="middle" x="280.95" y="-11.62" font-family="Helvetica, Arial, sans-serif" font-size="15.00" fill="#a8442f">False (168)</text>
+</g>
+<!-- f881 -->
+<g id="node11" class="node">
+<title>f881</title>
+<polygon fill="#ffffff" stroke="#a8442f" stroke-width="1.4" points="406.28,-131.38 297.62,-131.38 297.62,-95.38 406.28,-95.38 406.28,-131.38"/>
+<text xml:space="preserve" text-anchor="middle" x="351.95" y="-107.01" font-family="Helvetica, Arial, sans-serif" font-size="15.00" fill="#a8442f">False (881/1)</text>
+</g>
+<!-- t7 -->
+<g id="node12" class="node">
+<title>t7</title>
+<polygon fill="#ffffff" stroke="#1f4e79" stroke-width="1.4" points="464.66,-36 391.25,-36 391.25,0 464.66,0 464.66,-36"/>
+<text xml:space="preserve" text-anchor="middle" x="427.95" y="-11.62" font-family="Helvetica, Arial, sans-serif" font-size="15.00" fill="#1f4e79">True (7)</text>
+</g>
+<!-- f18 -->
+<g id="node13" class="node">
+<title>f18</title>
+<polygon fill="#ffffff" stroke="#a8442f" stroke-width="1.4" points="627.78,-36 540.12,-36 540.12,0 627.78,0 627.78,-36"/>
+<text xml:space="preserve" text-anchor="middle" x="583.95" y="-11.62" font-family="Helvetica, Arial, sans-serif" font-size="15.00" fill="#a8442f">False (18)</text>
+</g>
+</g>
+  </g>
+</svg>

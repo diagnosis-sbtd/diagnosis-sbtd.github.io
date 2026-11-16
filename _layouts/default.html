@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description | strip_html | strip_newlines }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+    {% if site.cronitor_client_key %}
+    <script async src="https://rum.cronitor.io/script.js"></script>
+    <script>
+      window.cronitor = window.cronitor || function() { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
+      cronitor("config", {
+        clientKey: "{{ site.cronitor_client_key }}",
+      });
+    </script>
+    {% endif %}
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        <nav aria-label="Sections">
+          <a href="#scenario">Illustrative scenario</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#get-started">Get started</a>
+          <a href="#paper">Paper</a>
+          <a class="github" href="{{ site.repository_url }}">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>Released under the MIT license · <a href="{{ site.repository_url }}">GitHub</a></p>
+      </div>
+    </footer>
+
+    <script>
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        document.querySelectorAll("video[autoplay]").forEach(function (v) {
+          v.removeAttribute("autoplay");
+          v.pause();
+        });
+      }
+    </script>
+  </body>
+</html>
